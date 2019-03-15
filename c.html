@@ -9,16 +9,37 @@
   box-sizing: border-box;
 }
 
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 495px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Style the header */
 header {
-  background-color: #666;
-  padding: 30px;
+  background-color: #00AA90;
+  padding: 20px;
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
   color: white;
 }
 
@@ -26,8 +47,8 @@ header {
 nav {
   float: left;
   width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
+  height: 700px; /* only for demonstration, should be removed */
+  background: #A8D8B9;
   padding: 20px;
   float:left;
   width:20%;
@@ -37,14 +58,17 @@ nav {
 nav ul {
   list-style-type: none;
   padding: 0;
+  font-size: 30px;
+  font-style: verdana
+  color : #00896C;
 }
 
-article {
+article { 
   float: left;
   padding: 20px;
   width: 70%;
   background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
+  height: 700px; /* only for demonstration, should be removed */
 }
 
 /* Clear floats after the columns */
@@ -56,7 +80,7 @@ section:after {
 
 /* Style the footer */
 footer {
-  background-color: #777;
+  background-color: #00AA90;
   padding: 10px;
   text-align: center;
   color: white;
@@ -78,25 +102,38 @@ footer {
 
 
 <header>
-  <h2>作業</h2>
+  <h2>Booker</h2>
 </header>
 
 <section>
   <nav>
     <ul>
-      <li><a href="index.html">introduct</a></li>
-      <li><a href="c.html">photo</a></li>
-      <li><a href="d.html">life</a></li>
+      <li><a href="index.html" style="text-decoration:none;">自我介紹</a></li>
+      <li><a href="c.html" style="text-decoration:none;">校園</a></li>
+      <li><a href="d.html" style="text-decoration:none;">生活</a></li>
     </ul>
   </nav>
   
   <article>
-  <img src="P2261573.jpg" width="400" height="300">
-  </article>
+  <div style="color:#00896C;font-size:40px;font-style:bold;text-align:center;">
+    <p>學校貓貓</p>
+    <br>
+    
+  </div>
+  <div class="gallery">
+  <a target="_blank" href="03.jpg">
+    <img src="01.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  </div>
+  <div class="gallery">
+  <a target="_blank" href="03.jpg">
+    <img src="02.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  </div>
 </section>
 
 <footer>
-  <p>Footer</p>
+  
 </footer>
 
 </body>
